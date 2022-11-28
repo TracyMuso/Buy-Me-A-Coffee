@@ -1,0 +1,20 @@
+{
+  "name": "buy-me-a-coffee",
+  "version": "1.0.0",
+  "description": "This is a simple DeFi(Decentralized Finance) App that allows anyone to connect thier crypto wallet and send crypto and send ether to  my wallet so I can \"Buy myself a coffee\", feel free to check it out :)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TracyMuso/Buy-Me-A-Coffee.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TracyMuso/Buy-Me-A-Coffee/issues"
+  },
+  "homepage": "https://github.com/TracyMuso/Buy-Me-A-Coffee#readme"
+}
