@@ -1,33 +1,65 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.9;
 
-// import "hardhat/console.sol";
+contract  BuyMeACoffee  {
+    // Event to emit when a memo is created
+    event NewMemo (
+        address indexed from,
+        uint256,
+        string name,
+        string message
+    );
+    // Memo struct
+    struct Memo {
+        address from;
+        uint256 timestamp;
+        string name;
+        string message;
+    }
 
-contract Lock {
-    uint public unlockTime;
-    address payable public owner;
+    Memo[] memos;
 
-    event Withdrawal(uint amount, uint when);
+    // address of contractdeployer
+    address payable owner;
 
-    constructor(uint _unlockTime) payable {
-        require(
-            block.timestamp < _unlockTime,
-            "Unlock time should be in the future"
-        );
-
-        unlockTime = _unlockTime;
+// deploy logic
+    constructor() {
         owner = payable(msg.sender);
     }
 
-    function withdraw() public {
-        // Uncomment this line, and the import of "hardhat/console.sol", to print a log in your terminal
-        // console.log("Unlock time is %o and block timestamp is %o", unlockTime, block.timestamp);
+    /**@dev buy s coffee for a contract owner
+     * @param _name name of the buyer
+     *@param _message message to the owner
+     */
 
-        require(block.timestamp >= unlockTime, "You can't withdraw yet");
-        require(msg.sender == owner, "You aren't the owner");
+    function buyCoffee(string memory _name, string memory _message) public payable {
+        require(msg.value > 0, "can't buy coffee for free!");
 
-        emit Withdrawal(address(this).balance, block.timestamp);
-
-        owner.transfer(address(this).balance);
+        // add the memo to the storage
+        memos.push(Memo(
+            msg.sender,
+            block.timestamp,
+            _name,
+            _message
+        ));
+        // emit a log event when a new memo is created
+        emit NewMemo(
+            msg.sender,
+            block.timestamp,
+            _name,
+            _message
+        );
+    }
+    /**
+     * @dev send the entire balance stored in this contract to the owner
+     */
+    function withdrawTips() public {
+        require(owner.send(address(this).balance));
+    }
+    /**
+     * @dev retrieve all the memos stored on the blockchain
+     */
+    function getMemos() public view returns(Memo[] memory) {
+        return memos;
     }
 }
