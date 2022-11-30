@@ -50,6 +50,7 @@ contract  BuyMeACoffee  {
             _message
         );
     }
+
     /**
      * @dev send the entire balance stored in this contract to the owner
      */
