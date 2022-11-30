@@ -48,7 +48,7 @@ This is a simple DeFi(Decentralized Finance) App that allows anyone to connect t
    # Dependencies
    *To install the following dependencies, run the following commands"
    - For npm `npm i npm`
-   - For hardhat `npx hardhat
+   - For hardhat `npx hardhat`
 
    # source code for replit
    [replit code](https://replit.com/@ElfinT/BuyMeACoffee-Solidity-DeFi-Tipping-app)
@@ -99,19 +99,3 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 This project is [MIT](./LICENSE) licensed.
-
-
-
-# Sample Hardhat Project
-
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
-
-Try running some of the following tasks:
-
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
-```
