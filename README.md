@@ -1,17 +1,22 @@
 ## Buy-Me-A-Coffee
-This is a simple DeFi(Decentralized Finance) App that allows anyone to connect thier crypto wallet and send crypto and send ether to  my wallet so I can "Buy myself a coffee". You can also leave a quick note if you want. Feel free to check it out :)
+This is a simple DeFi(Decentralized Finance) App that allows anyone to connect thier crypto wallet and send tips in form of ether to my wallet so I can "Buy myself a coffee". You can also leave a quick note. Feel free to check it out :)
+
+![](./assets/bmac-sc.png)
 
 
 ## Built With
 
 - HTML & CSS
 - Javascript
+- Solidity
 - Hardhat
 - Replit
 - Github
+- Metamask wallet
+- Next.js
 
-## Live Demo Coming soon
-
+## Live Demo
+[live version](https://buymeacoffee-solidity-defi-tipping-app.elfint.repl.co/)
 
 ## Getting Started
 
@@ -19,7 +24,7 @@ This is a simple DeFi(Decentralized Finance) App that allows anyone to connect t
 
 # Prerequisites
 
-- Github flow knowledge. -Intermediate CSS, HTML and Javascript. -Hardhat -Command line terminal -Replit
+- Github flow knowledge. -Intermediate CSS, HTML and Javascript. -Hardhat -Metamask wallet -Command line terminal -Replit
 
 # Setup 
 - To get a local copy follow these simple steps:
@@ -50,6 +55,9 @@ This is a simple DeFi(Decentralized Finance) App that allows anyone to connect t
    - For npm `npm i npm`
    - For hardhat `npx hardhat`
 
+   # source code for replit
+   - [replit code](https://replit.com/@ElfinT/BuyMeACoffee-Solidity-DeFi-Tipping-app)
+
 # Tests and Configuration
 
 To track linter errors locally follow these steps:
@@ -57,18 +65,15 @@ To track linter errors locally follow these steps:
 Download all the dependencies run:
 
 <code>
-npm install
+npm install --save-dev hardhat@^2.9.3 @nomiclabs/hardhat-waffle@^2.0.0 ethereum-waffle@^3.0.0 chai@^4.2.0 @nomiclabs/hardhat-ethers@^2.0.0 ethers@^5.0.0
 </code>
 
 # Usage
-- This app is made to send ether to my wallet 
+- This app is made to send ether tips to my wallet 
 - **NOTE**: The mobile version is currently unavailable.
 
 # Install
 - Set up Github Actions
-- Set up linter > Lighthouse , Webhint ,Stylelint , Eslint.
-- Webpack bundle for javascript.
-- Jest for  testing
 
 ## Author
 
@@ -91,7 +96,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Shout out to (Alchemy University)[alchemy.com] for guiding me through this course
+- Shout out to (Alchemy University)[university.alchemy.com] for guiding me through this course
 - Hat tip to anyone whose code was used
 - Inspiration
 - etc
@@ -99,19 +104,3 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 This project is [MIT](./LICENSE) licensed.
-
-
-
-# Sample Hardhat Project
-
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
-
-Try running some of the following tasks:
-
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
-```
