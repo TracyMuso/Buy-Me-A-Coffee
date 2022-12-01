@@ -1,6 +1,8 @@
 ## Buy-Me-A-Coffee
 This is a simple DeFi(Decentralized Finance) App that allows anyone to connect thier crypto wallet and send tips in form of ether to my wallet so I can "Buy myself a coffee". You can also leave a quick note. Feel free to check it out :)
 
+![](./assets/bmac-sc.png)
+
 
 ## Built With
 
@@ -11,7 +13,7 @@ This is a simple DeFi(Decentralized Finance) App that allows anyone to connect t
 - Github
 
 ## Live Demo
-[live](https://buymeacoffee-solidity-defi-tipping-app.elfint.repl.co/)
+[live version](https://buymeacoffee-solidity-defi-tipping-app.elfint.repl.co/)
 
 ## Getting Started
 
@@ -51,7 +53,7 @@ This is a simple DeFi(Decentralized Finance) App that allows anyone to connect t
    - For hardhat `npx hardhat`
 
    # source code for replit
-   [replit code](https://replit.com/@ElfinT/BuyMeACoffee-Solidity-DeFi-Tipping-app)
+   - [replit code](https://replit.com/@ElfinT/BuyMeACoffee-Solidity-DeFi-Tipping-app)
 
 # Tests and Configuration
 
