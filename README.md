@@ -8,9 +8,12 @@ This is a simple DeFi(Decentralized Finance) App that allows anyone to connect t
 
 - HTML & CSS
 - Javascript
+- Solidity
 - Hardhat
 - Replit
 - Github
+- Metamask wallet
+- Next.js
 
 ## Live Demo
 [live version](https://buymeacoffee-solidity-defi-tipping-app.elfint.repl.co/)
@@ -21,7 +24,7 @@ This is a simple DeFi(Decentralized Finance) App that allows anyone to connect t
 
 # Prerequisites
 
-- Github flow knowledge. -Intermediate CSS, HTML and Javascript. -Hardhat -Command line terminal -Replit
+- Github flow knowledge. -Intermediate CSS, HTML and Javascript. -Hardhat -Metamask wallet -Command line terminal -Replit
 
 # Setup 
 - To get a local copy follow these simple steps:
